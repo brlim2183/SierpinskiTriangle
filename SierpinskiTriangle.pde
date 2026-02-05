@@ -11,10 +11,10 @@ sierpinski(0,400,400);
 public int m= 50;
 public void mouseDragged()//optional
 {
-if (mouseX>pmouseX)
-m=m+2;
-else if(mouseX<pmouseX&&m>10)
+if (mouseX>pmouseX&&m>10)
 m=m-2;
+else if(mouseX<pmouseX)
+m=m+2;
 }
 public void sierpinski(int x, int y, int len) 
 {
